@@ -1,0 +1,212 @@
+/* Reset default margin and padding */
+body {
+  font-family: 'Montserrat', sans-serif;
+} 
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: bisque;
+  background-image: url(bgimg.jpg);
+  
+}
+
+
+
+/* Global Styles */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.main-heading{
+  font-size: 40px;
+  color: rgb(46, 46, 74);
+  text-align: center;
+  font-stretch: expanded;
+
+}
+.heading-1{
+  font-size: 50px;
+  color: #333333;
+  text-align: center;
+  padding-top: 40px;
+  
+  
+  
+}
+
+
+/* Navbar Styles */
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: bisque;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(233, 217, 199);
+  display: flex;
+  align-items: center;
+}
+
+.navbar li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.navbar li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333333;
+}
+
+.navbar li a:hover {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.search-item {
+  margin-left: auto;
+}
+
+.search-input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+}
+
+
+/* Hero Section Styles */
+.hero {
+  
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  /* Add additional styles as needed */
+}
+
+.build-resume-btn {
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: #ffffff;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  justify-content: center;
+  
+
+  /* Add additional styles as needed */
+}
+.build-resume-btn:hover{
+  background-color: #333333;
+}
+
+
+/* Benefits Section Styles */
+.benefits {
+  background-color: #f2f2f2;
+  
+  padding: 40px 0;
+  /* Add additional styles as needed */
+}
+
+/* Sample Templates Section Styles */
+.sample-templates {
+  background-color: #ffffff;
+  background-image: url(bgimg.jpg);
+  padding: 40px 0;
+  /* Add additional styles as needed */
+}
+
+/* Social Media Section Styles */
+.social-media {
+  background-color: #f2f2f2;
+  padding: 40px 0;
+  background-image: url(bgimg.jpg);
+  /* Add additional styles as needed */
+}
+
+/* Additional styles for headings, text, buttons, etc. can be added as needed */
+.four-img {
+
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  
+
+}
+
+.four-img li {
+  flex: 1;
+  margin: 50px;
+  overflow: hidden;
+  border-radius: 2%;
+  border-color: black;
+  
+}
+.four-img li img{
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+.four-img li img:hover{
+  transform: scale(1.05);
+}
+.benefits{
+  background-color: rgb(241, 205, 149);
+  background-image: url(bgimg.jpg);
+  text-align: center;
+}
+.sample-templates{
+  background-color: rgb(246, 188, 117);
+  
+}
+.fa {
+  
+  justify-content: space-between;
+  padding: 30px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  
+  background: #55ACEE;
+  color: white;
+}
+.social-media{
+  background-color: rgb(240, 177, 101);
+  
+}
+
