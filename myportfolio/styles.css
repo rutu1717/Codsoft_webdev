@@ -1,0 +1,275 @@
+body {
+    background-color: #5CDB95;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.first-section {
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+
+#image {
+    margin-top: 30px;
+    margin-right: 0px;
+    margin-left: 300px;
+    width: 27rem;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Apply the animation to the .logo class */
+.logo {
+    font-size: 36px;
+    animation: slideInFromLeft 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    font-size: 2rem;
+    margin-left: 300px;
+    margin-right: 30px;
+}
+.logo:hover {
+    animation: pulse 2s infinite;
+    color: rgb(14, 101, 6);
+  }
+
+  /* Animation keyframes for the pulsating effect */
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+
+#image {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Add hover effect to the image */
+#image:hover {
+    transform: scale(1.2);
+}
+
+hr {
+    border: none;
+    height: 3px;
+    background-image: linear-gradient(to right, transparent, #333, transparent);
+    margin: 100px auto;
+    width: 40%;
+}
+
+.second-section {
+    display: flex;
+    align-items: center;
+}
+
+/* Profile picture style */
+.profilepic {
+    width: 30%;
+}
+
+
+/* Profile picture style */
+#profile {
+    width: 30rem;
+    margin-left: 150px;
+}
+
+/* Styles for the profile pic */
+.paradiv {
+    margin-left: 360px;
+
+}
+
+.paradiv p {
+    font-weight: bold;
+    font-size: 1.5rem;
+    opacity: 1;
+    /* Start with full opacity for the bio text */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.profilepic:hover {
+    transform: scale(1.1);
+    /* Zoom-in effect on hover */
+}
+
+.paradiv:hover p {
+    opacity: 0.5;
+    /* Fade-in effect on hover */
+}
+/* Skills heading style */
+.skills-heading {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+  /* Skills section */
+  .skills-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Skill image style */
+  .skill {
+    text-align: center;
+  }
+  
+  .skill-image {
+    width: 320px;
+    height: 350px;
+    border: 8px solid #333;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  }
+  
+  /* Skill name style */
+  .skill-name {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  
+  /* Animation on hover */
+  .skill-image:hover {
+    transform: scale(1.1);
+    border-color: rgb(223, 221, 222);
+  }
+  .skills-heading {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .skills-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Project section styles */
+  /* Project section styles */
+.projects-heading {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 40px; /* Adjust as needed */
+}
+
+.project-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px; /* Adjust the gap between projects as needed */
+}
+
+.project {
+  display: flex;
+  flex-direction: row;
+  gap: 40px; /* Adjust the gap between image and info as needed */
+  align-items: center;
+}
+
+.project-info {
+  flex: 1;
+}
+
+.project-image img {
+  max-width: 100%;
+  height: auto;
+  border: 8px solid #333;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+/* Animation on hover (if desired) */
+.project-image img:hover {
+  transform: scale(1.1);
+  border-color: rgb(223, 221, 222);
+}
+
+/* Adjust text alignment for smaller screens */
+@media screen and (max-width: 768px) {
+  .project {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-image {
+    margin-bottom: 20px;
+  }
+}
+/* Skills section styles (unchanged) */
+
+/* Project section styles (unchanged) */
+
+/* See My Resume section styles */
+.resume-section {
+  text-align: center;
+  margin-top: 40px; /* Adjust as needed */
+}
+
+.resume-heading {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.add-resume-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #f06;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+  margin-bottom: 110px;
+}
+
+.add-resume-button:hover {
+  background-color: #ff0220;
+}
+
+/* Contact Me section styles */
+.contact-section {
+  background-color: #ff5468; /* Change to the desired background color */
+  text-align: center;
+  padding: 40px 0;
+}
+
+.contact-heading {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contact-section p {
+  margin: 10px 0;
+}
+
+/* Adjust text alignment for smaller screens */
+@media screen and (max-width: 768px) {
+  /* Adjust any styles for smaller screens here */
+}
